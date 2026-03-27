@@ -1,0 +1,154 @@
+.academic-section {
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 85% 15%, rgba(139, 92, 246, 0.05) 0%, transparent 40%);
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 20px 0;
+  box-sizing: border-box;
+}
+
+/* Header Spacing Fixes */
+.academic-section .section-header-ref {
+  margin-bottom: 1.5rem !important;
+}
+
+.academic-section .section-title {
+  margin-bottom: 0.25rem !important;
+}
+
+.academic-section .header-desc-ref {
+  margin-top: 0 !important;
+  margin-bottom: 1rem;
+}
+
+.academic-container {
+  max-width: 1200px;
+  width: 90%;
+}
+
+.academic-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.academic-card {
+  position: relative;
+  padding: 1.5rem 1.25rem;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.card-accent {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background: var(--accent-gradient);
+  border-radius: 0 0 10px 10px;
+  opacity: 0.6;
+}
+
+.academic-card:hover {
+  transform: translateY(-15px) scale(1.02);
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--accent-color);
+  box-shadow: 0 30px 60px rgba(139, 92, 246, 0.15);
+}
+
+.academic-icon-container {
+  width: 54px;
+  height: 54px;
+  background: rgba(139, 92, 246, 0.1);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+  font-size: 1.75rem;
+  transition: transform 0.4s ease;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.academic-card:hover .academic-icon-container {
+  transform: scale(1.1) rotate(5deg);
+  background: var(--accent-color);
+  color: white;
+}
+
+.course-name {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.course-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.divider {
+  width: 40px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 1rem;
+}
+
+.school-name {
+  font-size: 1rem;
+  color: white;
+  font-weight: 600;
+  margin-bottom: auto;
+  opacity: 0.9;
+}
+
+.score-badge {
+  margin-top: 1rem;
+  padding: 0.4rem 1rem;
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid var(--accent-color);
+  border-radius: 50px;
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 0.9rem;
+  box-shadow: 0 5px 15px rgba(139, 92, 246, 0.2);
+}
+
+@media (max-width: 1024px) {
+  .academic-section {
+    height: auto;
+    min-height: 100vh;
+    padding: 100px 1.5rem 4rem;
+  }
+  
+  .academic-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .academic-card {
+    padding: 2rem 1.5rem;
+  }
+}

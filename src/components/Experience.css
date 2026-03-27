@@ -1,0 +1,246 @@
+.experience-section {
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 10% 90%, rgba(139, 92, 246, 0.05) 0%, transparent 40%);
+  padding: 100px 0 40px 0;
+  box-sizing: border-box;
+}
+
+/* Header Spacing Fixes */
+.experience-section .section-header-ref {
+  margin-bottom: 1.5rem !important;
+}
+
+.experience-section .section-title {
+  margin-bottom: 0.25rem !important;
+}
+
+.experience-section .header-desc-ref {
+  margin-top: 0 !important;
+}
+
+.exp-timeline {
+  position: relative;
+  max-width: 1000px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 23px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, transparent, var(--accent-color), transparent);
+  opacity: 0.3;
+}
+
+.exp-item {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.exp-item:last-child {
+  margin-bottom: 0;
+}
+
+.exp-dot-container {
+  flex-shrink: 0;
+  z-index: 2;
+}
+
+.exp-dot {
+  width: 48px;
+  height: 48px;
+  background: #1a1b26;
+  border: 2px solid var(--accent-color);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+  transition: all 0.4s ease;
+}
+
+.exp-item:hover .exp-dot {
+  background: var(--accent-color);
+  color: white;
+  transform: scale(1.1) rotate(5deg);
+}
+
+.exp-card {
+  flex: 1;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 24px;
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+  transition: all 0.4s ease;
+}
+
+.exp-item:hover .exp-card {
+  border-color: var(--accent-color);
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateX(10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.exp-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+  gap: 1.2rem;
+}
+
+.role-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 0.4rem;
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--text-dim);
+  font-weight: 400;
+}
+
+.date-badge {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(139, 92, 246, 0.1);
+  padding: 0.4rem 0.8rem;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+  border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.exp-card-body {
+  display: flex;
+  gap: 2rem;
+  align-items: stretch;
+}
+
+.exp-points {
+  list-style: none;
+  flex: 1.5;
+  margin-bottom: 0;
+}
+
+.exp-points li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  color: #d1d5db;
+  line-height: 1.5;
+  margin-bottom: 0.6rem;
+  font-size: 0.85rem;
+}
+
+.bullet-icon {
+  margin-top: 2px;
+  color: var(--accent-color);
+  flex-shrink: 0;
+}
+
+.exp-tech-stack-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding-left: 1.5rem;
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.tech-label-mini {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #64748b;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.exp-tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-pill {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(139, 92, 246, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.35rem 0.8rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.exp-item:hover .tech-pill {
+  border-color: var(--accent-color);
+  background: rgba(139, 92, 246, 0.1);
+}
+
+@media (max-width: 1024px) {
+  .experience-section {
+    height: auto;
+    padding: 80px 1.5rem 60px;
+  }
+  
+  .exp-item {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .timeline-line {
+    display: none;
+  }
+  
+  .exp-dot {
+    width: 48px;
+    height: 48px;
+  }
+  
+  .exp-card-body {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .exp-tech-stack-right {
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 1rem;
+  }
+  
+  .exp-card-header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

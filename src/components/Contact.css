@@ -1,0 +1,170 @@
+.contact-section {
+  height: 100vh;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.contact-container-alt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 95%;
+  max-width: 1400px !important;
+  margin: 0 auto;
+}
+
+.contact-hub-grid {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.contact-tile-wrapper {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-tile-glass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1.25rem;
+  padding: 2.5rem 1.5rem;
+  background: rgba(255, 255, 255, 0.015);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  text-decoration: none;
+  color: white;
+  height: 100%;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-tile-glass:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: var(--accent-color);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(139, 92, 246, 0.1);
+}
+
+.tile-icon-box {
+  width: 60px;
+  height: 60px;
+  background: rgba(139, 92, 246, 0.1);
+  border: 1px solid rgba(139, 92, 246, 0.2);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-color);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.socials-icon-box {
+  background: transparent !important;
+  border: none !important;
+  gap: 1rem;
+  width: auto;
+  height: auto;
+}
+
+.social-link-item {
+  width: 52px;
+  height: 52px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.linkedin-link {
+  background: rgba(10, 102, 194, 0.1);
+  color: #0a66c2;
+  border: 1px solid rgba(10, 102, 194, 0.2);
+}
+
+.linkedin-link:hover {
+  background: #0a66c2;
+  color: white;
+  box-shadow: 0 0 20px rgba(10, 102, 194, 0.4);
+  transform: translateY(-3px) rotate(-5deg);
+}
+
+.github-link {
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.github-link:hover {
+  background: #fff;
+  color: #000;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px) rotate(5deg);
+}
+
+.tile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tile-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--accent-color);
+  margin-bottom: 6px;
+}
+
+.tile-value {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+.contact-tile-glass:hover .tile-value {
+  color: white;
+}
+
+@media (max-width: 1200px) {
+  .contact-hub-grid {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  .contact-tile-wrapper {
+    min-width: 280px;
+  }
+  .contact-section {
+    height: auto;
+    padding: 6rem 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-tile-wrapper {
+    width: 100%;
+    max-width: none;
+  }
+}
