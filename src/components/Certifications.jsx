@@ -51,23 +51,25 @@ const Certifications = () => {
               transition={{ delay: index * 0.1, duration: 0.5 }}
             >
               <div className="cert-landscape-inner">
-                <div className="cert-landscape-left">
-                  <div className="cert-icon-frame-small">{cert.icon}</div>
-                </div>
-                
-                <div className="cert-landscape-main">
-                  <div className="cert-landscape-top">
-                    <span className="cert-issuer-mini">{cert.issuer}</span>
-                    <div className="cert-verified-badge">
-                      <span className="verify-glow-dot"></span>
-                      VERIFIED
-                    </div>
+                <div className="cert-landscape-content">
+                  <div className="cert-landscape-left">
+                    <div className="cert-icon-frame-small">{cert.icon}</div>
                   </div>
-                  <h3 className="cert-title-landscape">{cert.title}</h3>
-                  <p className="cert-desc-landscape">{cert.description}</p>
+                  
+                  <div className="cert-landscape-main">
+                    <div className="cert-landscape-top">
+                      <span className="cert-issuer-mini">{cert.issuer}</span>
+                      <div className="cert-verified-badge">
+                        <span className="verify-glow-dot"></span>
+                        VERIFIED
+                      </div>
+                    </div>
+                    <h3 className="cert-title-landscape">{cert.title}</h3>
+                    <p className="cert-desc-landscape">{cert.description}</p>
+                  </div>
                 </div>
 
-                <div className="cert-landscape-right">
+                <div className="cert-landscape-bottom">
                   <a 
                     href={cert.link} 
                     target="_blank" 
@@ -75,7 +77,7 @@ const Certifications = () => {
                     className="cert-action-pill"
                     title="View Credential"
                   >
-                    View <ExternalLink size={12} />
+                    View Certificate <ExternalLink size={14} />
                   </a>
                 </div>
               </div>
