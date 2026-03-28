@@ -45,7 +45,7 @@ const About = () => {
               and hands-on experience in building high-performance web applications.
             </p>
             <p>
-              Proficient in building scalable and efficient web applications using 
+              Proficient in building scalable and efficient web applications using {" "}
               <span className="accent">Node.js, Express.js, MySQL, React.js, Python, and Django</span>. 
               I am skilled in designing optimized databases, developing RESTful APIs, and 
               deploying containerized applications with Docker.

@@ -21,7 +21,7 @@ const Hero = () => {
             
             <p className="hero-description top-intro">
               Hi, I'm <span className="highlight">Mohan Patro</span>. I build robust web applications across the full stack 
-              and serve as a <span className="accent">Technical Trainer</span> mentoring students in 
+              and serve as a <span className="accent">Technical Trainer</span> mentoring students in {" "}
               <span className="accent">React.js, Node.js, Python</span> & <span className="accent">Django</span>.
             </p>
 
