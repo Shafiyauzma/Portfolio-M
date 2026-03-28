@@ -8,14 +8,14 @@ const Certifications = () => {
       title: "Project Completion Certificate",
       issuer: "BD Labs",
       description: "Successfully completed full-cycle project development and software delivery, meeting all technical requirements.",
-      link: "https://drive.google.com/file/d/1I5cZmpRZndPbDAvRV66OqDneaBdBFvan/view",
+      link: "https://drive.google.com/file/d/1-6raQw_1oC0bwtnePkqzD-kNBIu9QmiE/view",
       icon: <Award size={28} />
     },
     {
       title: "Internship Certificate",
       issuer: "TechCurve AI Innovations",
       description: "Completed an intensive Backend Engineer internship, focusing on RESTful APIs, database optimization, and scalable backend services.",
-      link: "https://drive.google.com/file/d/1-6raQw_1oC0bwtnePkqzD-kNBIu9QmiE/view",
+      link: "https://drive.google.com/file/d/1I5cZmpRZndPbDAvRV66OqDneaBdBFvan/view",
       icon: <Award size={28} />
     }
   ];

@@ -42,6 +42,7 @@
   margin-bottom: 1rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .hero-title {
@@ -270,6 +271,19 @@
 }
 
 @media (max-width: 768px) {
-  .hero-title { font-size: 3.5rem; }
+  .role-badge {
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .hero-title { font-size: 2.2rem; }
   .hero-subtitle { font-size: 1.5rem; }
+}
+
+@media (max-width: 480px) {
+  .role-badge {
+    font-size: 0.6rem;
+    padding: 0.3rem 0.6rem;
+    letter-spacing: 0.5px;
+  }
+  .hero-title { font-size: 1.8rem; }
 }
